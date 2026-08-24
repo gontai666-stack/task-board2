@@ -1,0 +1,96 @@
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.task-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  background: var(--bg);
+}
+
+.task-form button {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  opacity: 0.9;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text);
+}
+
+.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.task-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.task-text {
+  overflow-wrap: anywhere;
+}
+
+.task-item.completed {
+  color: #9ca3af;
+  background: var(--code-bg);
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+}
+
+.delete-button {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-h);
+  background: transparent;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
